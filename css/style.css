@@ -1,0 +1,340 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f1ea;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background: linear-gradient(to right, #5c3b24, #8b5e3c);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 1.2rem;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    background-color: #3e2723;
+    padding: 15px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #d7b899;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main{
+    padding: 40px 20px;
+}
+
+/* =========================
+   SECCION INICIO
+========================= */
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.inicio img{
+    width: 450px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.inicio div{
+    max-width: 500px;
+}
+
+.inicio h2{
+    font-size: 2.5rem;
+    color: #5c3b24;
+    margin-bottom: 20px;
+}
+
+.inicio p{
+    margin-bottom: 25px;
+}
+
+/* =========================
+   BOTON
+========================= */
+
+.boton{
+    display: inline-block;
+    background-color: #5c3b24;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.boton:hover{
+    background-color: #8b5e3c;
+}
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.info{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.info h2{
+    margin-bottom: 40px;
+    color: #5c3b24;
+}
+
+.beneficios{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.beneficios article{
+    background-color: white;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.contenedor-productos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3{
+    margin: 15px 0;
+    color: #5c3b24;
+}
+
+.card p{
+    padding: 0 15px;
+}
+
+.card span{
+    display: block;
+    margin: 20px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #8b5e3c;
+}
+
+/* =========================
+   RESEÑAS (GRID)
+========================= */
+
+.grid-resenas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.resena{
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.resena h3{
+    margin-bottom: 15px;
+}
+
+.resena h4{
+    margin-top: 15px;
+    color: #5c3b24;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.contacto{
+    max-width: 700px;
+    margin: auto;
+}
+
+.contacto h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5c3b24;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+textarea{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    background-color: #5c3b24;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #8b5e3c;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.video h2{
+    margin-bottom: 25px;
+    color: #5c3b24;
+}
+
+.video iframe{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 80px;
+}
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+@media(max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header h1{
+        font-size: 2.2rem;
+    }
+
+    .inicio{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio h2{
+        font-size: 2rem;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .video iframe{
+        width: 100%;
+        height: 250px;
+    }
+
+}
